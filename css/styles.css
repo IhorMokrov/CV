@@ -68,7 +68,7 @@ p {
 .sidebar-foot-element {
   display: flex;
   align-items: center;
-  padding-left: 60px;
+  padding-left: 160px;
   height: 62px;
   background: #99ccc7;
 }
