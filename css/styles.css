@@ -40,11 +40,12 @@ p {
 }
 
 .design-line {
-  display: none;
   position: absolute;
-  top: 20%;
-  left: 0;
+  /* top: 24%; */
+  top: 352px;
+
   width: 1132px;
+  width: auto;
 }
 
 .sidebar {
@@ -329,7 +330,7 @@ p {
   }
 
   .design-line {
-    display: none;
+    /* display: none; */
   }
 
   .sidebar-item {
