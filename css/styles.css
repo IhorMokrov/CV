@@ -31,7 +31,7 @@ p {
 
 .wrapper {
   width: 1129px;
-  height: 1681px;
+  /* height: 1681px; */
   margin: auto;
   display: flex;
   flex-direction: row-reverse;
@@ -42,7 +42,7 @@ p {
 .design-line {
   position: relative;
   margin-left: -60px;
-  top: -1090px;
+  top: -1039px;
   width: 1135px;
 }
 
@@ -68,12 +68,12 @@ p {
 .sidebar-foot-element {
   height: 62px;
   background: #99ccc7;
-  outline: 1px solid tomato;
 }
 
 .main-content {
+  padding-bottom: 40px;
   width: 684px;
-  /* border-top: rgb(198, 198, 198) 1px solid; */
+
   border-right: rgb(198, 198, 198) 2px solid;
   border-bottom: rgb(198, 198, 198) 1px solid;
 }
@@ -104,7 +104,7 @@ p {
 }
 
 .hard-skills-container {
-  margin-top: 140px;
+  margin-top: 40px;
 }
 
 .hard-skills-list {
