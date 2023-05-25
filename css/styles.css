@@ -68,6 +68,7 @@ p {
 .sidebar-foot-element {
   height: 62px;
   background: #99ccc7;
+  outline: 1px solid tomato;
 }
 
 .main-content {
@@ -315,7 +316,7 @@ p {
 .work-3-container {
   margin-top: 20px;
 }
-
+/* 
 @media screen and (max-width: 1180px) {
   .main-content {
     width: 100%;
@@ -448,4 +449,4 @@ p {
   .location-container {
     background-size: 100% 100%;
   }
-}
+} */
