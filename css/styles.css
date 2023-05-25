@@ -28,7 +28,7 @@ p {
 }
 
 .wrapper {
-  width: 1116px;
+  width: 1129px;
   height: 1681px;
   margin: auto;
   display: flex;
@@ -38,6 +38,7 @@ p {
 }
 
 .design-line {
+  display: none;
   position: absolute;
   top: 20%;
   left: 0;
@@ -45,23 +46,26 @@ p {
 }
 
 .sidebar {
-  width: 444px;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  width: 444px;
+  height: 100%;
   background: #1b2754;
   padding-top: 120px;
-  position: relative;
   padding-left: 40px;
   padding-right: 70px;
   margin-right: 0px;
 }
 
+.sidebar-and-footer {
+  display: flex;
+  flex-direction: column;
+}
+
 .sidebar-foot-element {
-  width: inherit;
   height: 62px;
   background: #99ccc7;
-  position: absolute;
-  bottom: 0;
-  left: 0;
 }
 
 .main-content {
@@ -171,67 +175,42 @@ p {
   font-size: 36px;
 }
 
-.contacts-mail-icon {
-  position: absolute;
-  top: 18%;
-  left: 20px;
-  height: 32px;
-}
-
-.contacts-location-icon {
-  position: absolute;
-  top: 16%;
-  left: 24px;
-  height: 30px;
-}
-
 /* Sidebar contacts */
 .contacts-container {
+  display: flex;
+  flex-direction: column;
+
   color: #d8d8d8;
 }
 
-.phone-container {
+.phone-container,
+.email-container,
+.location-container {
   display: flex;
   align-items: center;
   padding-left: 20px;
   height: 45px;
   background-image: url(../images/contacts-frame.png);
+  background-size: auto 100%;
+
   background-repeat: no-repeat;
 }
 
-.contacts-phone-icon {
+.phone-container,
+.email-container {
+  margin-bottom: 15px;
+}
+
+.contacts-phone-icon,
+.contacts-mail-icon,
+.contacts-location-icon {
   margin-right: 10px;
   height: 80%;
 }
 
-.phone-text {
-  font-size: 20px;
-}
-
-.email-container {
-  position: relative;
-  height: 45px;
-  margin-top: 16px;
-}
-
-.email-text {
-  position: absolute;
-  top: 26%;
-  left: 70px;
-  font-size: 20px;
-}
-
-.location-container {
-  position: relative;
-  height: 45px;
-  margin-top: 16px;
-  width: 444px;
-}
-
+.phone-text,
+.email-text,
 .location-text {
-  position: absolute;
-  top: 26%;
-  left: 70px;
   font-size: 20px;
 }
 
