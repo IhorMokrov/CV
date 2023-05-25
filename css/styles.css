@@ -2,10 +2,12 @@ body {
   width: auto;
   padding-top: 40px;
   padding-bottom: 40px;
-  /* padding-left: 40px;
-    padding-right: 40px; */
   background: rgb(82, 86, 89);
   font-family: Arial;
+}
+
+a {
+  text-decoration: none;
 }
 
 h1,
@@ -53,9 +55,10 @@ p {
   height: 100%;
   background: #1b2754;
   padding-top: 120px;
-  padding-left: 40px;
+  padding-left: 60px;
   padding-right: 70px;
   margin-right: 0px;
+  color: #d8d8d8;
 }
 
 .sidebar-and-footer {
@@ -86,25 +89,8 @@ p {
   color: rgb(59, 56, 56);
 }
 
-.sidebar-horizontal-row {
-  background: #a0ccc4;
-  height: 3px;
-  width: 280px;
-  border: none;
-  margin: 0px;
-}
-
 .courses-container {
   margin-top: 140px;
-  margin-left: 20px;
-}
-
-.sidebar-title {
-  color: #a0ccc4;
-  text-transform: uppercase;
-  padding-left: 52px;
-  margin: 5px;
-  font-size: 22px;
 }
 
 .courses-list {
@@ -112,7 +98,6 @@ p {
 }
 
 .sidebar-item {
-  color: #d8d8d8;
   list-style: none;
   margin-bottom: 12px;
   font-size: 18px;
@@ -120,7 +105,6 @@ p {
 
 .hard-skills-container {
   margin-top: 140px;
-  margin-left: 20px;
 }
 
 .hard-skills-list {
@@ -128,14 +112,12 @@ p {
 }
 
 .hard-skills-item {
-  color: #d8d8d8;
   list-style: none;
   margin-bottom: 8px;
 }
 
 .certificates-container {
   margin-top: 40px;
-  margin-left: 20px;
 }
 
 .certificates-item {
@@ -143,19 +125,38 @@ p {
   margin-bottom: 8px;
 }
 
-.certificates-link {
+.link {
+  padding: 10px 0;
   color: #d8d8d8;
 }
 
-.sidebar-icon {
-  height: 36px;
-  float: left;
-  padding-left: 5px;
+.sidebar-item .link {
+  padding: 0 0;
+}
+
+.link:hover {
+  color: #99ccc7;
 }
 
 .sidebar-title-container {
+  display: flex;
+  align-items: center;
   padding-top: 8px;
   padding-bottom: 8px;
+  padding-left: 5px;
+  border-top: 3px solid #99ccc7;
+  border-bottom: 3px solid #99ccc7;
+}
+
+.sidebar-icon {
+  margin-right: 10px;
+  height: 36px;
+}
+
+.sidebar-title {
+  color: #a0ccc4;
+  text-transform: uppercase;
+  font-size: 22px;
 }
 
 .my-name {
@@ -179,7 +180,6 @@ p {
 .contacts-container {
   display: flex;
   flex-direction: column;
-
   color: #d8d8d8;
 }
 
@@ -191,7 +191,7 @@ p {
   padding-left: 20px;
   height: 45px;
   background-image: url(../images/contacts-frame.png);
-  background-size: auto 100%;
+  background-size: cover;
 
   background-repeat: no-repeat;
 }
@@ -214,14 +214,6 @@ p {
   font-size: 20px;
 }
 
-.main-horizontal-row {
-  background: rgb(217, 217, 217);
-  height: 3px;
-  width: 600px;
-  border: none;
-  margin: 0px;
-}
-
 .education-icon {
   height: 36px;
   float: left;
@@ -234,12 +226,13 @@ p {
 }
 
 .education-title-container {
+  display: flex;
+  align-items: center;
   height: 52px;
   padding-top: 0px;
   padding-bottom: 0px;
-  align-content: center;
-  display: flex;
-  align-items: center;
+  border-top: 3px solid #d8d8d8;
+  border-bottom: 3px solid #d8d8d8;
 }
 
 .education-title {
@@ -285,6 +278,13 @@ p {
   align-content: center;
   display: flex;
   align-items: center;
+  border-top: 3px solid #d8d8d8;
+  border-bottom: 3px solid #d8d8d8;
+}
+
+.work-1-container,
+.work-2-container {
+  border-bottom: 3px solid #d8d8d8;
 }
 
 .work-experience-title {
@@ -324,7 +324,7 @@ p {
 
   .sidebar {
     padding-left: 10px;
-    padding-right: 0;
+    padding-right: 8px;
     width: 330px;
   }
 
@@ -345,10 +345,6 @@ p {
   .personal-growth {
     padding-left: 10px;
     padding-right: 10px;
-  }
-
-  .main-horizontal-row {
-    width: 100%;
   }
 }
 
@@ -382,6 +378,7 @@ p {
 
   .sidebar {
     padding-top: 20px;
+    padding-right: 8px;
   }
 
   .courses-container {
@@ -408,11 +405,6 @@ p {
 
   .sidebar-title {
     font-size: 18px;
-    padding-left: 48px;
-  }
-
-  .sidebar-horizontal-row {
-    width: 220px;
   }
 
   .sidebar-item {
@@ -450,5 +442,11 @@ p {
 
   .my-profession {
     font-size: 24px;
+  }
+
+  .phone-container,
+  .email-container,
+  .location-container {
+    background-size: 100% 100%;
   }
 }
