@@ -52,7 +52,14 @@ p {
   flex-direction: column;
   width: 444px;
   height: 100%;
+
   background: #1b2754;
+
+  background-image: url(../images/design-line-w.svg);
+  background-repeat: no-repeat;
+  background-position: -163px 308px;
+  background-size: 200%;
+
   padding-top: 120px;
   padding-left: 60px;
   padding-right: 70px;
@@ -88,6 +95,10 @@ p {
 .about-me {
   height: 397px;
   background: #99ccc7;
+  background-image: url(../images/design-line-main.svg);
+  background-repeat: no-repeat;
+  background-position: -369px 309px;
+  background-size: 178%;
 }
 
 .personal-growth {
@@ -117,7 +128,7 @@ p {
 }
 
 .hard-skills-container {
-  margin-top: 40px;
+  margin-top: 120px;
 }
 
 .hard-skills-item {
